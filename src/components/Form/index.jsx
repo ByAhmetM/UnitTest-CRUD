@@ -10,8 +10,9 @@ const Form = ({ addUser }) => {
   return (
     <form onSubmit={handleSubmit} className="my-5 ">
       <div>
-        <label htmlFor="">İsim: </label>
+        <label htmlFor="name">İsim</label>
         <input
+          id="name"
           type="text"
           name="name"
           placeholder="ör: Mustafa"
@@ -20,8 +21,9 @@ const Form = ({ addUser }) => {
       </div>
 
       <div className="my-4 ">
-        <label htmlFor="">Email: </label>
+        <label htmlFor="email">Email</label>
         <input
+          id="email"
           type="email"
           name="email"
           placeholder="ör: Mustafa@gmail.com"
@@ -30,8 +32,9 @@ const Form = ({ addUser }) => {
       </div>
 
       <div className="my-4 ">
-        <label htmlFor="">Yaş: </label>
+        <label htmlFor="age">Yaş</label>
         <input
+          id="age"
           type="number"
           name="age"
           placeholder="ör: 18"
